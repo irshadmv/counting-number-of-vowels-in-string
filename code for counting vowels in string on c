@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char a[20];
+    int i,j,flag=0;
+    gets(a);
+    for(i=0;i<strlen(a);i++)
+    {
+        switch(a[i])
+        {
+            case 'A':
+            case 'a':
+            case 'E':
+            case 'e':
+            case 'I':
+            case 'i':
+            case 'O':
+            case 'o':
+            case 'U':
+            case 'u':
+            flag++;
+            break;
+        }
+    }
+        printf("%d",flag);
+    
+
+    return 0;
+}
